@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_lbl_blutzucker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Blutzucker"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/et_blutzucker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/Blutzucker"
+                android:inputType="number"
+                android:textSize="30sp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_KEs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="@string/KEs" />
+
+            <EditText
+                android:id="@+id/et_inputKEs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/KEs"
+                android:inputType="numberDecimal"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_Kohlenhydrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Kohlenhydrate"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_inputKH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Kohlenhydrate"
+                android:inputType="numberDecimal"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_Faktor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/KE_Faktor"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_currentKEFaktor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/KE_Faktor"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_ergebnis_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Einheiten"
+                android:textStyle="bold"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_ergebnis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Ergebnis"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_notiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_notiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notizen"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <ListView
+        android:id="@+id/lv_historie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

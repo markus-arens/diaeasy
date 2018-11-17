@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.markus.diaeasy.MainActivity" >
+
+    <item android:id="@+id/action_showdata"
+        android:title="@string/action_showdata"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="200"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_export_history"
+        android:title="Export Historie"
+        android:orderInCategory="300"
+        app:showAsAction="never" />
+
+    <!--<item android:id="@+id/demo_data"
+        android:title="Datenbank neu erstellen!"
+        android:orderInCategory="9999"
+        app:showAsAction="never" />
+-->
+
+    <item android:id="@+id/action_save"
+        android:title="save"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        />
+
+</menu>
